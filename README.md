@@ -22,8 +22,8 @@ to your platform and unzip it. Make sure the `terraform-inventory` binary is exe
 
 ## Usage
 
-If your Terraform state file is named `terraform.tfstate` (the default), `cd` to
-it and run:
+If you are using [remote state][rs] (or if your state file happens to be named
+`terraform.tfstate`), `cd` to it and run:
 
 	ansible-playbook --inventory-file=/path/to/terraform-inventory deploy/playbook.yml
 
@@ -137,3 +137,4 @@ MIT.
 
 [ansible]: https://www.ansible.com
 [tf]:      https://www.terraform.io
+[rs]:      https://www.terraform.io/docs/state/remote/index.html
